@@ -20,6 +20,6 @@ It's presented how Classification Problem multiclass [UP, KEEP, DOWN]
 
 by: Lecrin Technologies
 
-http://lecrintechnologies.com
+http://lecrintech.com
 
 We are glad receving any idea or feedback.
