@@ -1,20 +1,27 @@
+## btctrading
+
 Time Series Forecast with Bitcoin value, to detect upward/down trends.
 
 It's presented how Classification Problem multiclass [UP, KEEP, DOWN]
 
 ----
 
-** Install and run: **
+## Install and run:
 
 - pip install -r requirements.txt
 - Download csv data and put it in data/BCHARTS-BITSTAMPUSD.csv https://www.quandl.com/api/v3/datasets/BCHARTS/BITSTAMPUSD/data.csv?order=asc
-- python ...
-- python ...
+- ipython or jupyter to execute Ensembles.ipynb or EDA.ipynb
 
 ----
 
-TODO:
+## TODO:
 - Tune parameters of ensembles.
-- Get bitcoin historic data (hour/minute).
+- Get bitcoin historic data (hourly/minutely). Currently we are working daily.
 - Add different algorithms or ideas (LSTM, Reinforcement Learning, Q-Learning).
 - Alert System (email).
+
+----
+
+by: Lecrin Technologies
+http://lecrintechnologies.com
+We are glad receving any idea or feedback.
