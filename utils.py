@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
+import math
 import pandas as pd
 from sklearn.metrics import log_loss, cohen_kappa_score, accuracy_score, confusion_matrix, hinge_loss, classification_report
 from pandas_ml import ConfusionMatrix
+from datetime import datetime
 
 import settings
 
@@ -19,8 +21,9 @@ def split_df2(dframe):
     testfilter = [True if i%4 == 0 else False for i in range(dframe.shape[0])]
     return dframe[trainfilter], dframe[testfilter]
 
-# drop rows with 0.0 values
+# drop rows with "Nans" values
 def dropna(df):
+    df = df[df < math.exp(709)] # big number
     df = df[df != 0.0]
     df = df.dropna()
     return df
@@ -36,3 +39,6 @@ def metrics(y_true, y_pred, y_pred_proba=False):
     print('Report: {}'.format(classification_report(y_true, y_pred, target_names=target_names)))
     cm = ConfusionMatrix(y_true.tolist(), y_pred.tolist())
     cm.print_stats()
+
+def timestamptodate(timestamp):
+    return datetime.fromtimestamp(int(timestamp)).strftime('%Y-%m-%d %H:%M:%S')
