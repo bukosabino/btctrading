@@ -1,14 +1,7 @@
-
-** LINKS: **
-- https://btc-e.com
-- https://btc-e.com/api/3/docs
-- https://btc-e.com/tapi/docs
-- https://btc-e.com/tapi/docs#examples
-- http://api.bitcoincharts.com/v1/csv/
-- http://bitcoincharts.com/charts/chart.json?m=bitstampUSD&r=1
-
 - Get info global (ordenes de compra activas), diferentes apis.
 
 - Present results :P: Web con diferentes selectores donde el usuario puede seleccionar los diferentes algoritmos y los diferentes tiempos (15min, 2horas, etc) y apareceran gráficas y porcentajes de acierto y una recomendación [vender, comprar, mantener] en tiempo real.
 
 - Tendencias de mercado de otras criptomonedas: eth, ltc, ripple, etc. http://blog.kaggle.com/2017/05/11/two-sigma-financial-modeling-code-competition-5th-place-winners-interview-team-best-fitting-bestfitting-zero-circlecircle/
+
+- LSTMs

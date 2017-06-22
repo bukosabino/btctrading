@@ -1,6 +1,6 @@
 ## btctrading
 
-Time Series Forecast with Bitcoin value, to detect upward/down trends.
+Time Series Forecast with Bitcoin value, to detect upward/down trends with Machine Learning Algorithms.
 
 It's presented how Classification Problem multiclass [UP, KEEP, DOWN]
 
