@@ -17,8 +17,8 @@ It's presented how Classification Problem multiclass [UP, KEEP, DOWN]
 
 ----
 
-by: Lecrin Technologies
+by: Lecrin Technologies 
 
-http://lecrintech.com
+http://lecrintech.com 
 
 We are glad receving any idea or feedback.
