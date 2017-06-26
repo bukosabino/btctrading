@@ -35,10 +35,17 @@ def metrics(y_true, y_pred, y_pred_proba=False):
     if y_pred_proba is not False:
         print('Cross Entropy: {}'.format(log_loss(y_true, y_pred_proba)))
     print('Accuracy: {}'.format(accuracy_score(y_true, y_pred)))
-    print('Coeficiente Kappa: {}'.format(cohen_kappa_score(y_true, y_pred)))
+    print('Coefficient Kappa: {}'.format(cohen_kappa_score(y_true, y_pred)))
     print('Report: {}'.format(classification_report(y_true, y_pred, target_names=target_names)))
     cm = ConfusionMatrix(y_true.tolist(), y_pred.tolist())
     cm.print_stats()
+
+# show metrics
+def metrics2(y_true, y_pred):
+	print('Accuracy: {}'.format(accuracy_score(y_true, y_pred)))
+	print('Coefficient Kappa: {}'.format(cohen_kappa_score(y_true, y_pred)))
+	print "Confussion Matrix:"
+	print confusion_matrix(y_true, y_pred)
 
 def timestamptodate(timestamp):
     return datetime.fromtimestamp(int(timestamp)).strftime('%Y-%m-%d %H:%M:%S')
