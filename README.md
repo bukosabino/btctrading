@@ -6,6 +6,8 @@ It's presented how Classification Problem multiclass [UP, KEEP, DOWN]
 
 ## Install and run:
 
+- git clone https://github.com/bukosabino/btctrading.git
+- cd btctrading
 - pip install -r requirements.txt
 - jupyter notebook
 
@@ -16,6 +18,7 @@ XGBoost, period=30-min, PERCENT_UP=0.01, PERCENT_DOWN=0.01, without 'prev_column
 - Accuracy: 0.951995560283
 - Coefficient Kappa: 0.659794212904
 - Confussion Matrix:
+
 | KEEP | UP | DOWN |
 | --------- | --------- | ----------------- |
 | 19545 | 72 | 109 |
@@ -24,9 +27,9 @@ XGBoost, period=30-min, PERCENT_UP=0.01, PERCENT_DOWN=0.01, without 'prev_column
 
 LogisticRegression, period=Hourly, PERCENT_UP=0.015, PERCENT_DOWN=0.015, with 'prev_columns':
 
-Accuracy: 0.934394168371
-Coefficient Kappa: 0.317203847389
-Confusion Matrix:
+- Accuracy: 0.934394168371
+- Coefficient Kappa: 0.317203847389
+- Confusion Matrix:
 
 | KEEP | UP | DOWN |
 | --------- | --------- | ----------------- |
