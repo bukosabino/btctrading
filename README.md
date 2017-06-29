@@ -16,6 +16,8 @@ XGBoost, period=30-min, PERCENT_UP=0.01, PERCENT_DOWN=0.01, without 'prev_column
 - Accuracy: 0.951995560283
 - Coefficient Kappa: 0.659794212904
 - Confussion Matrix:
+| KEEP | UP | DOWN |
+| --------- | --------- | ----------------- |
 | 19545 | 72 | 109 |
 | 390 | 489 | 67 |
 | 359 | 41 | 551 |
@@ -25,6 +27,9 @@ LogisticRegression, period=Hourly, PERCENT_UP=0.015, PERCENT_DOWN=0.015, with 'p
 Accuracy: 0.934394168371
 Coefficient Kappa: 0.317203847389
 Confusion Matrix:
+
+| KEEP | UP | DOWN |
+| --------- | --------- | ----------------- |
 | 10328 | 30 | 37 |
 | 335 | 94 | 4 |
 | 330 | 2 | 89 |
