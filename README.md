@@ -13,29 +13,27 @@ It's presented how Classification Problem multiclass [UP, KEEP, DOWN]
 
 ## Results:
 
-XGBoost, period=30-min, PERCENT_UP=0.01, PERCENT_DOWN=0.01, without 'prev_columns':
+XGBoost, period=Houly, PERCENT_UP=0.015, PERCENT_DOWN=0.015, without 'prev_columns':
 
-- Accuracy: 0.951995560283
-- Coefficient Kappa: 0.659794212904
+- Accuracy: 0.973330962752
+- Coefficient Kappa: 0.802703881133
 - Confussion Matrix:
-
 | KEEP | UP | DOWN |
 | --------- | --------- | ----------------- |
-| 19545 | 72 | 109 |
-| 390 | 489 | 67 |
-| 359 | 41 | 551 |
+| 10299 | 41 | 41 |
+| 99 | 316 | 2 |
+| 113 | 4 | 334 |
 
-LogisticRegression, period=Hourly, PERCENT_UP=0.015, PERCENT_DOWN=0.015, with 'prev_columns':
+XGBoost, period=Hourly, PERCENT_UP=0.015, PERCENT_DOWN=0.015, without 'prev_columns':
 
-- Accuracy: 0.934394168371
-- Coefficient Kappa: 0.317203847389
-- Confusion Matrix:
-
-| KEEP | UP | DOWN |
-| --------- | --------- | ----------------- |
-| 10328 | 30 | 37 |
-| 335 | 94 | 4 |
-| 330 | 2 | 89 |
+- Accuracy: 0.958333333333
+- Coefficient Kappa: 0.790502793296
+- Confussion Matrix:
+ | KEEP | UP | DOWN |
+ | --------- | --------- | ----------------- |
+ | 209 | 1 | 2 |
+ | 5 | 7 | 67 |
+ | 2 | 0 | 14 |
 
 ## TODO:
 
