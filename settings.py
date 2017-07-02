@@ -1,6 +1,6 @@
 from datetime import date
 
-NTESTS = 200
+NTESTS = 240
 PREV_DAYS = 10
 PERCENT_UP = 0.015
 PERCENT_DOWN = 0.015
