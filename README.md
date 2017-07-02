@@ -18,6 +18,7 @@ XGBoost, period=Houly, PERCENT_UP=0.015, PERCENT_DOWN=0.015, without 'prev_colum
 - Accuracy: 0.973330962752
 - Coefficient Kappa: 0.802703881133
 - Confussion Matrix:
+
 | KEEP | UP | DOWN |
 | --------- | --------- | ----------------- |
 | 10299 | 41 | 41 |
@@ -29,6 +30,7 @@ XGBoost, period=Hourly, PERCENT_UP=0.015, PERCENT_DOWN=0.015, without 'prev_colu
 - Accuracy: 0.958333333333
 - Coefficient Kappa: 0.790502793296
 - Confussion Matrix:
+
  | KEEP | UP | DOWN |
  | --------- | --------- | ----------------- |
  | 209 | 1 | 2 |
