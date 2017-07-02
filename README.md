@@ -34,7 +34,7 @@ XGBoost, period=Hourly, PERCENT_UP=0.015, PERCENT_DOWN=0.015, without 'prev_colu
  | KEEP | UP | DOWN |
  | --------- | --------- | ----------------- |
  | 209 | 1 | 2 |
- | 5 | 7 | 67 |
+ | 5 | 7 | 0 |
  | 2 | 0 | 14 |
 
 ## TODO:
