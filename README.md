@@ -44,6 +44,7 @@ XGBoost, period=Hourly, PERCENT_UP=0.015, PERCENT_DOWN=0.015, without 'prev_colu
 - Add features -> Global Indicators (EUR/USD, S&P500, etc).
 - Add different algorithms or ideas (LSTM, Reinforcement Learning, Q-Learning).
 - Alert System (email).
+- More Technical analysis: https://en.wikipedia.org/wiki/Technical_analysis
 
 ----
 
