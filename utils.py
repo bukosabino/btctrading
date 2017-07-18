@@ -42,10 +42,10 @@ def metrics(y_true, y_pred, y_pred_proba=False):
 
 # show metrics
 def metrics2(y_true, y_pred):
-	print('Accuracy: {}'.format(accuracy_score(y_true, y_pred)))
-	print('Coefficient Kappa: {}'.format(cohen_kappa_score(y_true, y_pred)))
-	print "Confussion Matrix:"
-	print confusion_matrix(y_true, y_pred)
+    print('Accuracy: {}'.format(accuracy_score(y_true, y_pred)))
+    print('Coefficient Kappa: {}'.format(cohen_kappa_score(y_true, y_pred)))
+    print "Confussion Matrix:"
+    print confusion_matrix(y_true, y_pred)
 
 def timestamptodate(timestamp):
     return datetime.fromtimestamp(int(timestamp)).strftime('%Y-%m-%d %H:%M:%S')

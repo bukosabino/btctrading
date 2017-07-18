@@ -1,9 +1,11 @@
 from datetime import date
 
-NTESTS = 2240
+NTESTS = 1
 PREV_DAYS = 10
 PERCENT_UP = 0.01
 PERCENT_DOWN = 0.01
+PERIOD = 'Hourly'
+MARKET = 'bitstampUSD'
 
 # DATE START
 YEAR_START = 2011
