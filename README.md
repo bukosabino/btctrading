@@ -4,6 +4,8 @@ Time Series Forecast with Bitcoin value, to detect upward/down trends with Machi
 
 It's presented how Classification Problem multiclass [UP, KEEP, DOWN]
 
+Get data from https://bitcoincharts.com/charts, you can choose period, symbol and exchange market and save the datas in a csv file.
+
 ## Install and run:
 
 - git clone https://github.com/bukosabino/btctrading.git
