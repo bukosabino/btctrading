@@ -13,7 +13,7 @@ It's presented how Classification Problem multiclass [UP, KEEP, DOWN]
 
 ## TODO:
 
-- Simulator validation
+- Simulator validation (backtesting)
 - Tune parameters of xgboost.
 - Add features -> Global Indicators (EUR/USD, S&P500, etc).
 - Add different algorithms or ideas (LSTM, Reinforcement Learning, Q-Learning).
