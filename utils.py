@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.metrics import log_loss, cohen_kappa_score, accuracy_score, confusion_matrix, hinge_loss, classification_report
 from pandas_ml import ConfusionMatrix
 from datetime import datetime
-
+from sklearn.metrics import roc_auc_score
 import settings
 
 # split dataset (train and test) in 2 pieces.
@@ -36,9 +36,10 @@ def metrics(y_true, y_pred, y_pred_proba=False):
         print('Cross Entropy: {}'.format(log_loss(y_true, y_pred_proba)))
     print('Accuracy: {}'.format(accuracy_score(y_true, y_pred)))
     print('Coefficient Kappa: {}'.format(cohen_kappa_score(y_true, y_pred)))
-    print('Report: {}'.format(classification_report(y_true, y_pred, target_names=target_names)))
-    cm = ConfusionMatrix(y_true.tolist(), y_pred.tolist())
-    cm.print_stats()
+    print 'Classification Report:'
+    print classification_report(y_true.values, y_pred, target_names=target_names)
+    print "Confussion Matrix:"
+    print confusion_matrix(y_true, y_pred)
 
 # show metrics
 def metrics2(y_true, y_pred):
