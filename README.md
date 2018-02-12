@@ -28,4 +28,4 @@ by: Lecrin Technologies
 
 http://lecrintech.com
 
-We are glad receving any contribution, idea or feedback.
+We are glad receiving any contribution, idea or feedback.
