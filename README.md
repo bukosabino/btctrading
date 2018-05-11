@@ -4,8 +4,8 @@ This is my personal code to predict the Bitcoin value using Machine Learning / D
 
 We will consider our problem as:
 
-* 1. Regression Problem.
-* 2. Classification Multiclass Problem [UP, KEEP, DOWN].
+1. Regression Problem.
+2. Classification Multiclass Problem [UP, KEEP, DOWN].
 
 Get data from https://bitcoincharts.com/charts, you can choose period, symbol and exchange market and save the datas in a csv file.
 
