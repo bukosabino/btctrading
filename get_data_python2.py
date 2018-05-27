@@ -1,24 +1,19 @@
 # -*- coding: utf-8 -*-
 
-"""Get bitcoin historic data.
-
-Works with python 3
-"""
-
+import urllib, json
 from datetime import timedelta, datetime
 import csv
-import requests
 
 import settings
 
 # Get and write data
-def get(path_file='data/datas.csv', period='6-hour', market='bitstampUSD'):
+def get(path_file='data/datas.csv', period='Hourly', market='bitstampUSD'):
 
-    print("Loading.....")
+    print "Loading....."
     header = ["Timestamp", "Open", "High", "Low", "Close", "Volume_BTC",
                 "Volume_Currency", "Weighted_Price"]
 
-    with open(path_file, 'w') as f:
+    with open(path_file, 'wb') as f:
         writer = csv.writer(f, delimiter=',')
         writer.writerow(header)
 
@@ -32,7 +27,8 @@ def get(path_file='data/datas.csv', period='6-hour', market='bitstampUSD'):
             '&e=' + settings.DATE_END.isoformat()
 
             # print url
-            data = requests.get(url).json()
+            response = urllib.urlopen(url)
+            data = json.loads(response.read())
             for d in data:
                 writer.writerow(d)
 
@@ -56,15 +52,17 @@ def get(path_file='data/datas.csv', period='6-hour', market='bitstampUSD'):
                     '&i=' + period + '&c=1' + '&s=' + date_start.isoformat() + \
                     '&e=' + date_end.isoformat()
                     # print url
-                    data = requests.get(url).json()
+                    response = urllib.urlopen(url)
+                    data = json.loads(response.read())
                     for d in data:
                         writer.writerow(d)
                 except:
-                    print('Url not available (date): ' + url)
+                    print 'Url not available (date): ' + url
                 i += period_to_call + 1
-                print(str(i) + ' of ' + str(delta.days+1) + ' days loaded...')
+                print str(i) + ' of ' + str(delta.days+1) + ' days loaded...'
 
-    print("Last Timestamp: " + \
-        datetime.fromtimestamp(int(data[-1][0])).strftime('%Y-%m-%d %H:%M:%S'))
+    print "Last Timestamp: " + \
+        datetime.fromtimestamp(int(data[-1][0])).strftime('%Y-%m-%d %H:%M:%S')
 
-get('data/datas-Hourly.csv', period=settings.PERIOD, market=settings.MARKET)
+
+# get('data/datas.csv', period='1-min', market='bitstampUSD')

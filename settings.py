@@ -4,7 +4,7 @@ NTESTS = 1
 PREV_DAYS = 10
 PERCENT_UP = 0.01
 PERCENT_DOWN = 0.01
-PERIOD = 'Hourly'
+PERIOD = 'Hourly' # [5-min, 15-min, 30-min, Hourly, 2-hour, 6-hour, 12-hour, Daily, Weekly]
 MARKET = 'bitstampUSD'
 
 # DATE START
